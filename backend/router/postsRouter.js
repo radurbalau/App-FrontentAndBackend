@@ -1,5 +1,5 @@
 const express = require("express");
-const database = require("../database/database");
+const booksModel = require("../database/database");
 
 
 const router = express.Router();
@@ -73,9 +73,10 @@ router.get("/names", (req, res, next) => {
 
 //add
 router.post('/',(req,res)=>{
+    console.log('add');
     const item = {
-        seller: req.body.seller,
-        name: req.body.name,
+        sellersName: req.body.sellersName,
+        productName: req.body.productName,
         price: req.body.price
     };
 
@@ -83,7 +84,7 @@ router.post('/',(req,res)=>{
         console.log('Inserted')
 
         booksModel.insertIntoDb(item);
-        res.json({message: `${item.seller} added`}).status(201);
+        res.json({message: `${item.sellersName} added`}).status(201);
         //res.status(201).json(item);
     }catch(err) {
         console.log(err);

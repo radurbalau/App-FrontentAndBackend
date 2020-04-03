@@ -1,0 +1,57 @@
+.titlu {
+  text-align: center;
+}
+
+.greycol {
+  background-image: url("../pictures/bg2.jpg");
+}
+
+#demoFont {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  letter-spacing: -2.4px;
+  word-spacing: 0.6px;
+  color: rgb(199, 203, 207);
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+
+#subFont {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  letter-spacing: -2.4px;
+  word-spacing: 0.6px;
+  color: rgb(199, 203, 207);
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+
+.centrare {
+  text-align: center;
+}
+
+.bg {
+  background-image: url("../pictures/bg4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.usrimage {
+  background-image: url("../pictures/prof0.png");
+  width: 250px;
+  height: 200px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.restr {
+  background-color: lightslategrey;
+  width: 235px;
+}
